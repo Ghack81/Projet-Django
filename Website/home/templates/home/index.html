@@ -1,18 +1,12 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>index</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css '%}">
-</head>
-<body>
-    <div id="main_box">
-        <span><h1 >Bonjour Django et Python </h1></span>
-        <div id="box_left">LEFT</div>
-        <div id="box_center">CENTER</div>
-        <div id="box_right">RIGHT</div>
-    </div>
+{% extends 'home/base.html' %}
 
-<script rel="javascript" type="text/javascript" href="{%%}"></script>
-</body>
-</html>
+{% block title %}
+Index
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block body %}
+<h1>Tutorial on Django and Python</h1>
+{% endblock %}
